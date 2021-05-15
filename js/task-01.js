@@ -9,8 +9,9 @@
 //     Категория: Животные
 //     Количество элементов: 4
 
-const categories =document.querySelectorAll('.item')
+const categories=document.querySelectorAll('.item')
 console.log(`'В списке ${categories.length} категории.'`);
 
-const categorEl=[...categories].map(category=>`  Категория:${category.children[0].textContent} Количество элементов ${category.children[1].children.length}`).join("\n");
+const categorEl=[...categories].map(category=> `Категория:${category.children[0].textContent} 
+Количество элементов:${category.children[1].children.length}`).join("\n");
 console.log(categorEl);
